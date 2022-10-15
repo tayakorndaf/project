@@ -79,54 +79,54 @@ def insert():
 
 @app.route('/squat')
 def sq():
-    return render_template("t/squat.html")
+    return render_template("squat.html")
 
 @app.route('/leglunges')
 def ll():
-    return render_template("t/leglunges.html")
+    return render_template("leglunges.html")
 
 @app.route('/toysoldier')
 def ts():
-    return render_template("t/toysoldier.html")
+    return render_template("toysoldier.html")
 
 @app.route('/highkneeruns')
 def hk():
-    return render_template("t/highkneeruns.html")
+    return render_template("highkneeruns.html")
 
 @app.route('/jumpslap')
 def js():
-    return render_template("t/jumpslap.html")
+    return render_template("jumpslap.html")
 
 @app.route('/standingsidecrunch')
 def sc():
-    return render_template("t/standingsidecrunch.html")
+    return render_template("standingsidecrunch.html")
 
 
 
 @app.route('/startSQ')
 def ssq():
     
-    return render_template("t/startSQ.html")
+    return render_template("startSQ.html")
 
 @app.route('/startLL')
 def sll():
-    return render_template("t/startLL.html")
+    return render_template("startLL.html")
     
 @app.route('/startTS')
 def sts():
-    return render_template("t/startTS.html")
+    return render_template("startTS.html")
 
 @app.route('/startSC')
 def ssc():
-    return render_template("t/startSC.html")
+    return render_template("startSC.html")
 
 @app.route('/startHK')
 def shk():
-    return render_template("t/startHK.html")
+    return render_template("startHK.html")
 
 @app.route('/startJS')
 def sjs():
-    return render_template("t/startJS.html")
+    return render_template("startJS.html")
 
 
 
