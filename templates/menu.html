@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>menu</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Kanit">
+        <style>
+            body{
+            background-color: rgb(120, 205, 205);
+            font-family: 'Kanit', serif;
+            font-size: 25px;
+
+            }
+            .container{
+                max-width: 960px;
+                margin: 50 auto;
+                border: 5px solid rgb(0, 255, 30);
+                text-align: center;
+                background: rgb(186, 234, 12);
+                
+            }
+        </style>
+    </head>
+    <body>
+ 
+        <div align="right">
+            <h6>คุณ {{myname}}</h6>
+        </div>
+   
+    <h4 align="center"  text="blue">กดที่รูปเพื่อเลือกท่าออกกำลังกาย</h4>
+       
+    {% if value == "leg" %}
+
+        <center><a href ="/squat"  ><img src="../static/sq3.jpg" height="200" width="260"></a><br><br>squat<br><br><br></center>
+        <center><a href ="/toysoldier"  ><img src="../static/ts.jpg" height="200" width="260"></a><br><br>toysoldier<br><br><br></center>
+        <center><a href ="/highkneeruns"  ><img src="../static/hk.png" height="200" width="260"></a><br><br>highkneeruns<br><br><br></center>
+        <center><a href ="/standingsidecrunch"  ><img src="../static/sc.jpg" height="200" width="260"></a><br><br>standing side crunch<br><br><br></center>
+                
+    {% else %}
+        <center><a href ="/squat"  ><img src="../static/sq3.jpg" height="200" width="260"></a><br><br>squat<br><br><br></center>
+        <center><a href ="/leglunges"  ><img src="../static/ll.jpg" height="200" width="260"></a><br><br>leglunges<br><br><br></center>
+        <center><a href ="/toysoldier"  ><img src="../static/ts.jpg" height="200" width="260"></a><br><br>toysoldier<br><br><br></center>
+        <center><a href ="/highkneeruns"  ><img src="../static/hk.png" height="200" width="260"></a><br><br>highkneeruns<br><br><br></center>
+        <center><a href ="/standingsidecrunch"  ><img src="../static/sc.jpg" height="200" width="260"></a><br><br>standing side crunch<br><br><br></center>
+        <center><a href ="/jumpslap"  ><img src="../static/DD.jfif" height="200" width="260"></a><br><br>jumpslap<br><br><br></center>
+    {% endif %}
+</body>
+
+</html>

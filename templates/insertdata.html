@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insertdata</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Kanit">
+        <style>
+            body{
+            background-color: rgb(120, 205, 205);
+            font-family: 'Kanit', sans-serif;
+
+            
+            }
+            
+            
+            input[type=text], select {
+                width: 260;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+              }
+              
+              input[type=submit] {
+                width: 20%;
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+              }
+              
+              input[type=submit]:hover {
+                background-color: #45a049;
+              }
+              
+            
+            
+           
+            
+        </style>
+</head>
+<center>
+<body>
+      
+        <div class="container">
+            <h1>กรอกข้อมูล</h1>
+            <form action="{{url_for('menu')}}" method="GET">
+            
+                <div class="from-group">
+                    <label for="">ชื่อ</label><br />
+                    <label for="fname"></label>
+                    <input type="text" name="name" class="form-control" placeholder="ชื่อเล่น">
+                </div><br>
+                <div class="from-group">
+                    <label for="">อายุ</label><br />
+                    <input type="text" age="age" class="form-control" placeholder="อายุ">
+                </div>
+                <br />
+                
+                    อาการบาดเจ็บ<br>
+                    <select name="value" class="option">
+                        <option value="no">ไม่มี</option>
+                        <option value="hand">แขน</option>
+                        <option value="leg">ขา</option></select>
+                    </select>                        
+                
+                <br /><br /><br />
+                <input class="btn-success" type="submit" value="next" >
+            </form>
+            
+            
+        </div>
+    
+</body>
+</center>
+</html>
